@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Depha's Portfolio</title>
     <link rel="stylesheet" href="boxicons-2.0.9-20230214T092452Z-001/boxicons-2.0.9/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="icon" href="./images/delphi (2).png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="home">
@@ -18,7 +19,7 @@
 
     <div class="showcase">
         <nav class="navbar">
-            <h1 class="logo"><span class="text-secondary"></span><img src="/images/delphi (2).png"></h1>
+            <h1 class="logo"><span class="text-secondary"></span><img src="./images/delphi (2).png"></h1>
             
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
@@ -29,8 +30,9 @@
                 <!--<li><a href="#">Blogs</a></li>-->
                 <li><a href="#contact">Contact</a></li>
                 <li><a><span class="text-secondary"></span><i class="bx bxs-phone bx-xs"></i>  +250782955165</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-            <i class="bx bxs-menu-food bx-xs"></i>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
 
         <div class="showcase-content">
@@ -40,7 +42,7 @@
                 <div class="text-3">And I'm a <span class="typing-1"></span></div>
                 <a href=" " download="My cv" class="btn-md">Download CV</a>
             </div>
-            <div class="showcase-img"> <img src="/images/background.png"></div>
+            <div class="showcase-img"> <img src="./images/background.png"></div>
         </div> 
     </div>
     
@@ -52,12 +54,12 @@
             <h5 class="title text-center m-heading text-secondary">ABOUT ME</h5>
             <div class="about-content">
                 <div class="column left">
-                    <img src="./images/background.png">
+                    <img src="./images/about.png">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Ingabire and I'm a <span class="typing-2"></span></div>
                     <p>I am a Visual Designer with a strong focus on digital branding. Visual design seeks to attract, inspire, create desires and motivate people to respond to messages, with a view to making a favorable impact.</p>
-                    <table class="table">
+                    <table class="table" style="width: 100%">
                         <tr>
                             <td>Birthday</td>
                             <td>:June, 2001</td>
@@ -103,8 +105,8 @@
                           <h4>Web Design</h4>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi veniam consequatur veritatis dicta, iste aut voluptatibus odio hic suscipit fugit!</p>
                     </div>
-                <div class="shadowone"></div>
-                 <div class="shadowtwo"></div>        
+                   <div class="shadowone"></div>
+                   <div class="shadowtwo"></div>        
                </div>
                
                <div class="main">
@@ -195,7 +197,7 @@
                    </div>
                 </div>-->
                 <div class="work">
-                    <img src="/images/html.png">
+                    <img src="./images/html.png">
                     <div class="layer">
                         <h3>HTML:</h3>
                         <p>HyperText Markup Language or HTML
@@ -205,7 +207,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="/images/css.png">
+                    <img src="./images/css.png">
                     <div class="layer">
                         <h3>Css:</h3>
                         <p>stands for Cascading Style Sheets·
@@ -215,7 +217,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="/images/js.png">
+                    <img src="./images/js.png">
                     <div class="layer">
                         <h3>Javascript:</h3>
                         <p>often abbreviated as JS, is a programming language 
@@ -224,7 +226,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="/images/pyg.png">
+                    <img src="./images/pyg.png">
                     <div class="layer">
                         <h3>Python:</h3>
                         <p>It supports multiple programming paradigms,
@@ -233,7 +235,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="/images/phpgg.png">
+                    <img src="./images/phpgg.png">
                     <div class="layer">
                         <h3>PHP:</h3>
                         <p>stands for Hypertext Preprocessor. It is an open-source
@@ -242,7 +244,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="/images/mongog.png">
+                    <img src="./images/mongog.png">
                     <div class="layer">
                         <h3>MongoDB:</h3>
                         <p>is a source-available cross-platform 
@@ -262,55 +264,55 @@
             <div class="card">
                 <div class="box">
                     <img src="todo-list.jpg" alt="">
-                    <div class="text" onClick="window.location.href='https://dephas-to-do-list.netlify.app/'">To do list</div>
-                    <p>This my to do list</p>
+                    <div class="text">To do list</div>
+                    <button><a href="https://dephas-to-do-list.netlify.app/">CLICK ME</a></button>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="/images/work-2.png" alt="">
-                    <div class="text" onClick="window.location.href='https://depha-calculator.netlify.app'">calculator</div>
-                    <p>Best scientific calculator, click here</p>
+                    <img src="./images/typing.jpg" alt="">
+                    <div class="text">Typing speed test app</div>
+                    <button><a href="https://typingspeedappk-lab.netlify.app/">CLICK ME</a></button>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="/images/work-3.png" alt="">
-                    <div class="text">Online shopping app</div>
-                    <p>Your product sold through our web,online magic market!</p>
+                    <img src="./images/calc.png" alt="">
+                    <div class="text">Calculator</div>
+                    <button><a href="https://depha-calculator.netlify.app">CLICK ME</a></button>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="/images/come.jpg" alt="">
+                    <img src="./images/come.jpg" alt="">
                     <div class="text">Project name</div>
                     <p> comming soon!!!</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="/images/come.jpg" alt="">
+                    <img src="./images/come.jpg" alt="">
                     <div class="text">Project name</div>
                     <p>comming soon!!!</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="/images/come.jpg" alt="">
+                    <img src="./images/come.jpg" alt="">
                     <div class="text">Project name</div>
                     <p>comming soon!!!</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="/images/come.jpg" alt="">
+                    <img src="./images/come.jpg" alt="">
                     <div class="text">Project name</div>
                     <p>comming soon!!!</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="/images/come.jpg" alt="">
+                    <img src="./images/come.jpg" alt="">
                     <div class="text">Project name</div>
                     <p>comming soon!!!</p>
                 </div>
@@ -327,15 +329,13 @@
             <h5 class="title text-center m-heading text-secondary">CONTACT ME</h5>
             <div class="contact-content">
                 <div class="column left">
-                    <form action="https://formsubmit.co/ee74c5509e58b7d01f0e40ca03e4a20d " method="POST">
+                    <form id="form" action="https://formsubmit.co/ee74c5509e58b7d01f0e40ca03e4a20d " method="POST">
                         <div class="form-group">
-                            <input type="text" name="Name" id="name" placeholder="Full Name">
-                        
-            
-                            <input type="email" name="Email" id="email" placeholder="Your Email">
-                        
-                        
-                            <textarea name="Message" id="message" placeholder="Your Message"></textarea>
+                            <input type="text" name="Name" id="name" placeholder="Full Name" required>                        
+                            <div class="error"></div>
+                            <input type="email" name="Email" id="email" placeholder="Your Email">                        
+                            <div class="error"></div>
+                            <textarea name="Message" id="message" placeholder="Your Message" required></textarea>
                 
                             <button type="submit" class="btn-md">Send Message</button>
                         </div>
@@ -382,7 +382,9 @@
                        </div>
                    </div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15949.989916970322!2d30.037987611536817!3d-1.9543611818694453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4345de30dbf%3A0x97dd4327aa90d8ff!2sKatabaro%2C%20Kigali!5e0!3m2!1sen!2srw!4v1676370929279!5m2!1sen!2srw" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+                <div class="map-display">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15949.989916970322!2d30.037987611536817!3d-1.9543611818694453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4345de30dbf%3A0x97dd4327aa90d8ff!2sKatabaro%2C%20Kigali!5e0!3m2!1sen!2srw!4v1676370929279!5m2!1sen!2srw" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
         </div>
 </section>
 <footer id="footer">
